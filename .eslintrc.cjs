@@ -19,7 +19,7 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: { jsx: true },
   },
-  plugins: ['react', 'simple-import-sort', 'prettier'],
+  plugins: ['react', 'simple-import-sort', 'prettier', 'react-hooks'],
   rules: {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'react/react-in-jsx-scope': 'off',
