@@ -3,7 +3,9 @@ import './components/charts/ChartjsConfig';
 import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-// Pages
+import DMM from './pages/dashboard/DMM';
+import RPL from './pages/dashboard/RPL';
+import TKJ from './pages/dashboard/TKJ';
 import Home from './pages/Home';
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/dashboard/tkj" element={<TKJ />} />
+        <Route path="/dashboard/dmm" element={<DMM />} />
+        <Route path="/dashboard/rpl" element={<RPL />} />
       </Routes>
     </>
   );

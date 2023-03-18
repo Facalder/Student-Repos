@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 
+// import { Link } from 'react-router-dom';
 import Transition from '../../../utils/Transition';
 
 function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
@@ -92,9 +92,9 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
               </button>
             </div>
           </form>
-          <div className="py-4 px-2">
-            {/* Recent searches */}
-            <div className="mb-3 last:mb-0">
+          {/* <div className="py-4 px-2"> */}
+          {/* Recent searches */}
+          {/* <div className="mb-3 last:mb-0">
               <div className="mb-2 px-2 text-xs font-semibold uppercase text-slate-400">
                 Recent searches
               </div>
@@ -190,9 +190,9 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
                   </Link>
                 </li>
               </ul>
-            </div>
-            {/* Recent pages */}
-            <div className="mb-3 last:mb-0">
+            </div> */}
+          {/* Recent pages */}
+          {/* <div className="mb-3 last:mb-0">
               <div className="mb-2 px-2 text-xs font-semibold uppercase text-slate-400">
                 Recent pages
               </div>
@@ -238,8 +238,8 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
                   </Link>
                 </li>
               </ul>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </Transition>
     </>

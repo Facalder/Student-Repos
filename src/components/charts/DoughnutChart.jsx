@@ -1,23 +1,22 @@
 import 'chartjs-adapter-moment';
 
-import { ArcElement, Chart, DoughnutController, TimeScale, Tooltip } from 'chart.js';
+import { ArcElement, Chart, DoughnutController, TimeScale, Tooltip } from 'chart.js/auto';
 import React, { useEffect, useRef } from 'react';
 
 // Import utilities
-import { tailwindConfig } from '../utils/Utils';
+import { tailwindConfig } from '../../utils/Utils';
 
 Chart.register(DoughnutController, ArcElement, TimeScale, Tooltip);
 
-function DoughnutChart({ data, width, height }) {
+function DoughnutChart({ chartData, width, height }) {
   const canvas = useRef(null);
   const legend = useRef(null);
 
   useEffect(() => {
     const ctx = canvas.current;
-    // eslint-disable-next-line no-unused-vars
     const chart = new Chart(ctx, {
       type: 'doughnut',
-      data,
+      data: chartData,
       options: {
         cutout: '80%',
         layout: {

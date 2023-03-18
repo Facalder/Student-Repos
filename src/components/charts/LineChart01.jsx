@@ -13,7 +13,7 @@ import {
 import React, { useEffect, useRef } from 'react';
 
 // Import utilities
-import { formatValue, tailwindConfig } from '../utils/Utils';
+import { formatValue, tailwindConfig } from '../../utils/Utils';
 
 Chart.register(
   LineController,

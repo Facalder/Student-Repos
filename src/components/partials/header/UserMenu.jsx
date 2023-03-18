@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-import Transition from '../../../utils/Transition';
+// import Transition from '../../../utils/Transition';
 
 function UserMenu() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -45,26 +45,26 @@ function UserMenu() {
       >
         <img
           className="h-8 w-8 rounded-full"
-          src="https://www.bing.com/ck/a?!&&p=272293843680d2e0JmltdHM9MTY3OTAxMTIwMCZpZ3VpZD0zYzY5Mjg4OC1kODA1LTZkOTMtMmVhNy0zOWQ0ZDk1MzZjNDQmaW5zaWQ9NTQwMw&ptn=3&hsh=3&fclid=3c692888-d805-6d93-2ea7-39d4d9536c44&u=a1L2ltYWdlcy9zZWFyY2g_cT1wcm9maWxlK2F2YXRhciZpZD1BRTI2MkIxQTBGQ0JGMDEzMjU5MzZGNTdGMTdCNTlEOTAyQkJBODJFJkZPUk09SVFGUkJB&ntb=1"
+          src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png"
           width="32"
           height="32"
           alt="User"
         />
         <div className="flex items-center truncate">
           <span className="ml-2 truncate text-sm font-medium group-hover:text-slate-800">
-            Acme Inc.
+            IDN BS
           </span>
-          <svg
+          {/* <svg
             className="ml-1 h-3 w-3 shrink-0 fill-current text-slate-400"
             viewBox="0 0 12 12"
           >
             <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
-          </svg>
+          </svg> */}
         </div>
       </button>
 
-      <Transition
-        className="min-w-44 absolute top-full right-0 z-10 mt-1 origin-top-right overflow-hidden rounded border border-slate-200 bg-white py-1.5 shadow-lg"
+      {/* <Transition
+        className="absolute top-full right-0 z-10 mt-1 min-w-44 origin-top-right overflow-hidden rounded border border-slate-200 bg-white py-1.5 shadow-lg"
         show={dropdownOpen}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
@@ -79,7 +79,7 @@ function UserMenu() {
           onBlur={() => setDropdownOpen(false)}
         >
           <div className="mb-1 border-b border-slate-200 px-3 pt-0.5 pb-2">
-            <div className="font-medium text-slate-800">Acme Inc.</div>
+            <div className="font-medium text-slate-800">IDN BS</div>
             <div className="text-xs italic text-slate-500">Administrator</div>
           </div>
           <ul>
@@ -103,7 +103,7 @@ function UserMenu() {
             </li>
           </ul>
         </div>
-      </Transition>
+      </Transition> */}
     </div>
   );
 }

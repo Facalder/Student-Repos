@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 
+// import { Link } from 'react-router-dom';
 import Transition from '../../../utils/Transition';
 
 function Notifications() {
@@ -56,11 +56,11 @@ function Notifications() {
             d="M16 9.5c0-.987-.429-1.897-1.147-2.639C14.124 10.348 10.66 13 6.5 13c-.103 0-.202-.018-.305-.021C7.231 13.617 8.556 14 10 14c.449 0 .886-.04 1.307-.11L15 16v-4h-.012C15.627 11.285 16 10.425 16 9.5z"
           />
         </svg>
-        <div className="absolute top-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-white bg-rose-500"></div>
+        {/* <div className="absolute top-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-white bg-rose-500"></div> */}
       </button>
 
       <Transition
-        className="min-w-80 absolute top-full right-0 z-10 -mr-48 mt-1 origin-top-right overflow-hidden rounded border border-slate-200 bg-white py-1.5 shadow-lg sm:mr-0"
+        className="absolute top-full right-0 z-10 -mr-48 mt-1 min-w-80 origin-top-right overflow-hidden rounded border border-slate-200 bg-white py-1.5 shadow-lg sm:mr-0"
         show={dropdownOpen}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
@@ -78,7 +78,7 @@ function Notifications() {
             Notifications
           </div>
           <ul>
-            <li className="border-b border-slate-200 last:border-0">
+            {/* <li className="border-b border-slate-200 last:border-0">
               <Link
                 className="block py-2 px-4 hover:bg-slate-50"
                 to="#0"
@@ -134,7 +134,7 @@ function Notifications() {
                   Jan 24, 2020
                 </span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </Transition>

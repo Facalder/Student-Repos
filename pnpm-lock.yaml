@@ -21,6 +21,7 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-react: ^7.32.2
+  eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-simple-import-sort: ^10.0.0
   eslint-plugin-tailwindcss: ^3.10.1
   husky: ^8.0.3
@@ -70,13 +71,14 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
   eslint-plugin-promise: 6.1.1_eslint@8.36.0
   eslint-plugin-react: 7.32.2_eslint@8.36.0
+  eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.36.0
   eslint-plugin-tailwindcss: 3.10.1_tailwindcss@3.2.7
   husky: 8.0.3
   lint-staged: 13.2.0
   postcss: 8.4.21
   prettier: 2.8.4
-  tailwindcss: 3.2.7
+  tailwindcss: 3.2.7_postcss@8.4.21
   unplugin-imagemin: 0.3.11
   vite: 4.1.4
 
@@ -2001,6 +2003,15 @@ packages:
       eslint: 8.36.0
     dev: true
 
+  /eslint-plugin-react-hooks/4.6.0_eslint@8.36.0:
+    resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+    dependencies:
+      eslint: 8.36.0
+    dev: true
+
   /eslint-plugin-react/7.32.2_eslint@8.36.0:
     resolution: {integrity: sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==}
     engines: {node: '>=4'}
@@ -2041,7 +2052,7 @@ packages:
     dependencies:
       fast-glob: 3.2.12
       postcss: 8.4.21
-      tailwindcss: 3.2.7
+      tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
   /eslint-scope/7.1.1:
@@ -4160,10 +4171,12 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /tailwindcss/3.2.7:
+  /tailwindcss/3.2.7_postcss@8.4.21:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
