@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WelcomeBanner() {
+function WelcomeBanner({ welcomeTitle, welcomeMessage }) {
   return (
     <div className="relative mb-8 overflow-hidden rounded-sm bg-indigo-200 p-4 sm:p-6">
       {/* Background illustration */}
@@ -59,11 +59,9 @@ function WelcomeBanner() {
       {/* Content */}
       <div className="relative">
         <h1 className="mb-1 text-2xl font-bold text-slate-800 md:text-3xl">
-          SMK IDN Boarding School 🤞
+          {welcomeTitle}
         </h1>
-        <p>
-          <b>Student Achievement </b> Dashboard
-        </p>
+        <p>{welcomeMessage} Dashboard - Student batch 5 </p>
       </div>
     </div>
   );

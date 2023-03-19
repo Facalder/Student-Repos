@@ -31,6 +31,7 @@ specifiers:
   prettier: 2.8.4
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-flatpickr: ^3.10.13
   react-router-dom: ^6.9.0
   react-toastify: ^9.1.1
   react-transition-group: ^4.4.5
@@ -46,6 +47,7 @@ dependencies:
   moment: 2.29.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-flatpickr: 3.10.13_react@18.2.0
   react-router-dom: 6.9.0_biqbaboplfbrettd7655fr4n2y
   react-toastify: 9.1.1_biqbaboplfbrettd7655fr4n2y
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
@@ -2292,6 +2294,10 @@ packages:
       flatted: 3.2.7
       rimraf: 3.0.2
 
+  /flatpickr/4.6.13:
+    resolution: {integrity: sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==}
+    dev: false
+
   /flatted/3.2.7:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
 
@@ -3648,6 +3654,16 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-flatpickr/3.10.13_react@18.2.0:
+    resolution: {integrity: sha512-4m+K1K8jhvRFI8J/AHmQfA5hLALzhebEtEK8mLevXjX24MV3u502crzBn+EGFIBOfNUtrL5PId9FsGwgtuz/og==}
+    peerDependencies:
+      react: '>=16, <=18'
+    dependencies:
+      flatpickr: 4.6.13
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:

@@ -19,59 +19,78 @@ function RPL() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
-          <div className="mx-auto w-full max-w-9xl space-y-6 px-4 py-8 sm:px-6 lg:px-8">
-            <WelcomeBanner />
+          <div className="mx-auto w-full max-w-9xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+            <WelcomeBanner
+              welcomeTitle="RPL Class"
+              welcomeMessage={<b>Student Achievement </b>}
+            />
 
-            <div className="grid gap-6 sm:grid-cols-3">
-              <div className="space-y-4">
+            <div className="grid gap-6 xl:grid-cols-2">
+              <div className="space-y-6">
                 <h2 className="mb-2 text-lg font-semibold text-slate-800">IT Project</h2>
-                <CardProject
-                  titleProject="IT Project"
-                  percentageProject={100}
-                  iconProject="ri-github-fill"
-                />
-                <CardProject
-                  titleProject="IT Project"
-                  percentageProject={100}
-                  iconProject="ri-github-fill"
-                />
+                <div className="grid grid-cols-3 justify-start gap-6">
+                  <CardProject
+                    titleProject="Book"
+                    percentageProject={100}
+                    iconProject="ri-book-fill"
+                  />
+                  <CardProject
+                    titleProject="Android"
+                    percentageProject={100}
+                    iconProject="ri-android-fill"
+                  />
+                  <CardProject
+                    titleProject="UI/UX Mobile"
+                    percentageProject={100}
+                    iconProject="ri-artboard-2-fill"
+                  />
+                  <CardProject
+                    titleProject="DBMS Website"
+                    percentageProject={100}
+                    iconProject="ri-database-2-fill"
+                  />
+                  <CardProject
+                    titleProject="Flutter"
+                    percentageProject={100}
+                    iconProject="ri-flutter-fill"
+                  />
+                </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <h2 className="mb-2 text-lg font-semibold text-slate-800">
                   Non IT Project
                 </h2>
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="English"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-translate"
                 />
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="Diniyah"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
-                />
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="mb-2 text-lg font-semibold text-slate-800">IDN Hebat</h2>
-                <CardProject
-                  titleProject="IT Project"
-                  percentageProject={100}
-                  iconProject="ri-github-fill"
-                />
-                <CardProject
-                  titleProject="IT Project"
-                  percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-book-open-fill"
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-12 gap-6">
-              <CardProjectDoughnut />
-              <CardTable />
+            <div className="space-y-6">
+              <h2 className="mb-2 text-lg font-semibold text-slate-800">IDN Hebat</h2>
+              <div className="grid grid-cols-6 gap-6">
+                <CardProject
+                  titleProject="IDN Mengajar"
+                  percentageProject={100}
+                  iconProject="ri-code-box-fill"
+                />
+                <CardProject
+                  titleProject="Weekend Tech Talk"
+                  percentageProject={100}
+                  iconProject="ri-broadcast-fill"
+                />
+                <CardProjectDoughnut />
+              </div>
             </div>
+            <CardTable />
           </div>
         </main>
         <Footer />

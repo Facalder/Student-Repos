@@ -19,51 +19,54 @@ function TKJ() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
-          <div className="mx-auto w-full max-w-9xl space-y-6 px-4 py-8 sm:px-6 lg:px-8">
-            <WelcomeBanner />
+          <div className="mx-auto w-full max-w-9xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+            <WelcomeBanner
+              welcomeTitle="TKJ Class"
+              welcomeMessage={<b>Student Achievement </b>}
+            />
 
             <div className="grid gap-6 sm:grid-cols-3">
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <h2 className="mb-2 text-lg font-semibold text-slate-800">IT Project</h2>
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="Video Tutorial"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-live-fill"
                 />
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="Certifacate"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-medal-fill"
                 />
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <h2 className="mb-2 text-lg font-semibold text-slate-800">
                   Non IT Project
                 </h2>
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="English"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-translate"
                 />
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="Diniyah"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-book-open-fill"
                 />
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <h2 className="mb-2 text-lg font-semibold text-slate-800">IDN Hebat</h2>
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="IDN Mengajar"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-code-box-fill"
                 />
                 <CardProject
-                  titleProject="IT Project"
+                  titleProject="Weekend Tech Talk"
                   percentageProject={100}
-                  iconProject="ri-github-fill"
+                  iconProject="ri-broadcast-fill"
                 />
               </div>
             </div>

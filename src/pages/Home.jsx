@@ -20,7 +20,10 @@ function Home() {
 
         <main>
           <div className="mx-auto w-full max-w-9xl px-4 py-8 sm:px-6 lg:px-8">
-            <WelcomeBanner />
+            <WelcomeBanner
+              welcomeTitle="IDN Boarding School 🤞"
+              welcomeMessage={<b>Student Achievement </b>}
+            />
             <div className="grid grid-cols-12 gap-6">
               <CardOverview
                 titleProject="IT Project"

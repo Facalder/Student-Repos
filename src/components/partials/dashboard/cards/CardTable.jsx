@@ -3,7 +3,7 @@ import React from 'react';
 function CardTable() {
   const customers = [
     {
-      id: '0',
+      id: 0,
       name: 'Valezar Pedrosa Susanto',
       certificate: 100,
       ciscoLab: 40,
@@ -14,7 +14,7 @@ function CardTable() {
       english: 40,
     },
     {
-      id: '0',
+      id: 1,
       name: 'Rizky Noor Achmad',
       certificate: 100,
       ciscoLab: 40,
@@ -25,7 +25,7 @@ function CardTable() {
       english: 40,
     },
     {
-      id: '0',
+      id: 2,
       name: 'Nufail Ihsan Ruzain',
       certificate: 100,
       ciscoLab: 40,
@@ -36,7 +36,7 @@ function CardTable() {
       english: 40,
     },
     {
-      id: '0',
+      id: 3,
       name: 'Muhammad Khaizuran Danish',
       certificate: 100,
       ciscoLab: 40,
@@ -47,7 +47,7 @@ function CardTable() {
       english: 40,
     },
     {
-      id: '0',
+      id: 4,
       name: 'Muhammad Hanan Sarwono',
       certificate: 100,
       ciscoLab: 40,
@@ -58,7 +58,7 @@ function CardTable() {
       english: 40,
     },
     {
-      id: '0',
+      id: 5,
       name: 'Muhammad Fadhlan Wahyudi',
       certificate: 100,
       ciscoLab: 40,

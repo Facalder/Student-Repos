@@ -1,4 +1,4 @@
-import '../public/assets/css/tailwind.css';
+import '../public/assets/css/styles.css';
 import 'remixicon/fonts/remixicon.css';
 
 import React from 'react';
