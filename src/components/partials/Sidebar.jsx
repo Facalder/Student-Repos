@@ -64,7 +64,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
       <div
         id="sidebar"
         ref={sidebar}
-        className={`no-scrollbar lg:sidebar-expanded:!w-64 absolute left-0 top-0 z-40 flex h-screen w-64 shrink-0 flex-col overflow-y-scroll bg-slate-800 p-4 transition-all duration-200 ease-in-out lg:static lg:left-auto lg:top-auto lg:w-20 lg:translate-x-0 lg:overflow-y-auto 2xl:!w-64 ${
+        className={`no-scrollbar lg:sidebar-expanded:!w-64 absolute left-0 top-0 z-40 flex h-screen w-64 shrink-0 flex-col overflow-y-scroll bg-danube-800 p-4 transition-all duration-200 ease-in-out lg:static lg:left-auto lg:top-auto lg:w-20 lg:translate-x-0 lg:overflow-y-auto 2xl:!w-64 ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-64'
         }`}
       >
@@ -133,7 +133,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
         <div className="space-y-8">
           {/* Pages group */}
           <div>
-            <h3 className="pl-3 text-xs font-semibold uppercase text-slate-500">
+            <h3 className="pl-3 text-xs font-semibold uppercase text-white">
               <span
                 className="lg:sidebar-expanded:hidden hidden w-6 text-center lg:block 2xl:hidden"
                 aria-hidden="true"
@@ -216,7 +216,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' +
                                 (isActive
-                                  ? 'text-indigo-500'
+                                  ? 'text-yellow-400'
                                   : 'text-slate-400 hover:text-slate-200')
                               }
                             >
@@ -232,7 +232,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' +
                                 (isActive
-                                  ? 'text-indigo-500'
+                                  ? 'text-yellow-400'
                                   : 'text-slate-400 hover:text-slate-200')
                               }
                             >
@@ -248,7 +248,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' +
                                 (isActive
-                                  ? 'text-indigo-500'
+                                  ? 'text-yellow-400'
                                   : 'text-slate-400 hover:text-slate-200')
                               }
                             >
@@ -264,7 +264,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' +
                                 (isActive
-                                  ? 'text-indigo-500'
+                                  ? 'text-yellow-400'
                                   : 'text-slate-400 hover:text-slate-200')
                               }
                             >

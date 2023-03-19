@@ -76,12 +76,12 @@ function CardOverview({ titleProject, percentageProject, iconProject }) {
       <div className="p-5">
         <header className="mb-2 flex items-start justify-between">
           {/* Icon */}
-          <i className={`${iconProject} ri-2x text-indigo-500`}></i>
+          <i className={`${iconProject} ri-2x text-danube-800`}></i>
           {/* Menu button */}
           <EditMenu className="relative inline-flex">
             <li>
               <Link
-                className="flex py-1 px-3 text-sm font-medium text-slate-600 hover:text-slate-800"
+                className="flex py-1 px-3 text-sm font-medium text-danube-600 hover:text-danube-800"
                 to="#0"
               >
                 Option 1
@@ -89,7 +89,7 @@ function CardOverview({ titleProject, percentageProject, iconProject }) {
             </li>
             <li>
               <Link
-                className="flex py-1 px-3 text-sm font-medium text-slate-600 hover:text-slate-800"
+                className="flex py-1 px-3 text-sm font-medium text-danube-600 hover:text-danube-800"
                 to="#0"
               >
                 Option 2
@@ -105,12 +105,12 @@ function CardOverview({ titleProject, percentageProject, iconProject }) {
             </li>
           </EditMenu>
         </header>
-        <h2 className="mb-2 text-lg font-semibold text-slate-800">{titleProject}</h2>
-        <div className="mb-1 text-xs font-semibold uppercase text-slate-400">
+        <h2 className="mb-2 text-lg font-semibold text-danube-800">{titleProject}</h2>
+        <div className="mb-1 text-xs font-semibold capitalize text-san-juan-300">
           Average Accomplished
         </div>
         <div className="flex items-start">
-          <div className="mr-2 text-3xl font-bold text-slate-800">
+          <div className="mr-2 text-3xl font-bold text-danube-800">
             {percentageProject} %
           </div>
         </div>
