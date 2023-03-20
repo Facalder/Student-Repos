@@ -15,7 +15,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
     storedSidebarExpanded === null ? false : storedSidebarExpanded === 'true',
   );
 
-  // Close on click outside
   useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!sidebar.current || !trigger.current) return;
@@ -31,7 +30,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
     return () => document.removeEventListener('click', clickHandler);
   });
 
-  // Close if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }) => {
       if (!sidebarOpen || keyCode !== 27) return;
@@ -52,7 +50,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
   return (
     <div>
-      {/* Sidebar backdrop (mobile only) */}
       <div
         className={`bg-opacity/30 fixed inset-0 z-40 bg-slate-900 transition-opacity duration-200 lg:z-auto lg:hidden ${
           sidebarOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
@@ -60,7 +57,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
         aria-hidden="true"
       ></div>
 
-      {/* Sidebar */}
       <div
         id="sidebar"
         ref={sidebar}
@@ -68,9 +64,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
           sidebarOpen ? 'translate-x-0' : '-translate-x-64'
         }`}
       >
-        {/* Sidebar header */}
         <div className="mb-10 flex justify-between pr-3 sm:px-2">
-          {/* Close button */}
           <button
             ref={trigger}
             className="text-slate-500 hover:text-slate-400 lg:hidden"
@@ -87,7 +81,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
               <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
             </svg>
           </button>
-          {/* Logo */}
+
           <NavLink end to="/" className="block">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <defs>
@@ -129,9 +123,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
           </NavLink>
         </div>
 
-        {/* Links */}
         <div className="space-y-8">
-          {/* Pages group */}
           <div>
             <h3 className="pl-3 text-xs font-semibold uppercase text-white">
               <span
@@ -143,7 +135,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
               <span className="lg:sidebar-expanded:block lg:hidden 2xl:block">Pages</span>
             </h3>
             <ul className="mt-3">
-              {/* Dashboard */}
               <SidebarLinkGroup
                 activecondition={pathname === '/' || pathname.includes('dashboard')}
               >
@@ -194,7 +185,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               Dashboard
                             </span>
                           </div>
-                          {/* Icon */}
                           <div className="ml-2 flex shrink-0">
                             <svg
                               className={`ml-1 h-3 w-3 shrink-0 fill-current text-slate-400 ${
@@ -280,25 +270,6 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 }}
               </SidebarLinkGroup>
             </ul>
-          </div>
-        </div>
-
-        {/* Expand / collapse button */}
-        <div className="mt-auto hidden justify-end pt-3 lg:inline-flex 2xl:hidden">
-          <div className="px-3 py-2">
-            <button onClick={() => setSidebarExpanded(!sidebarExpanded)}>
-              <span className="sr-only">Expand / collapse sidebar</span>
-              <svg
-                className="sidebar-expanded:rotate-180 h-6 w-6 fill-current"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  className="text-slate-400"
-                  d="M19.586 11l-5-5L16 4.586 23.414 12 16 19.414 14.586 18l5-5H7v-2z"
-                />
-                <path className="text-slate-600" d="M3 23H1V1h2z" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>

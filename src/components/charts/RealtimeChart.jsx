@@ -12,7 +12,6 @@ import {
 } from 'chart.js';
 import React, { useEffect, useRef } from 'react';
 
-// Import utilities
 import { formatValue, tailwindConfig } from '../utils/Utils';
 
 Chart.register(
@@ -100,7 +99,6 @@ function RealtimeChart({ data, width, height }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
-  // Update header values
   useEffect(() => {
     const currentValue = data.datasets[0].data[data.datasets[0].data.length - 1];
     const previousValue = data.datasets[0].data[data.datasets[0].data.length - 2];

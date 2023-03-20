@@ -3,7 +3,6 @@ import { useState } from 'react';
 import CardTable from '../../components/partials/dashboard/cards/CardTable';
 import CardProject from '../../components/partials/dashboard/cards/project/CardProject';
 import CardProjectDoughnut from '../../components/partials/dashboard/cards/project/CardProjectDoughnut';
-import Footer from '../../components/partials/dashboard/Footer';
 import WelcomeBanner from '../../components/partials/dashboard/WelcomeBanner';
 import Header from '../../components/partials/Header';
 import Sidebar from '../../components/partials/Sidebar';
@@ -93,7 +92,6 @@ function DMM() {
             <CardTable />
           </div>
         </main>
-        <Footer />
       </div>
     </div>
   );

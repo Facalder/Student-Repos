@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import { hexToRGB, tailwindConfig } from '../../../utils/Utils';
-// import LineChart from '../../charts/LineChart01';
 import EditMenu from '../../../EditMenu';
 
 function CardProject({ titleProject, percentageProject, iconProject }) {
@@ -10,9 +8,7 @@ function CardProject({ titleProject, percentageProject, iconProject }) {
     <div className="col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 xl:col-span-1">
       <div className="p-5">
         <header className="mb-2 flex items-start justify-between">
-          {/* Icon */}
           <i className={`${iconProject} ri-2x text-danube-800`}></i>
-          {/* Menu button */}
           <EditMenu className="relative inline-flex">
             <li>
               <Link

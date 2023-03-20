@@ -12,9 +12,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="-mb-px flex h-16 items-center justify-between">
-          {/* Header: Left side */}
           <div className="flex">
-            {/* Hamburger button */}
             <button
               className="text-slate-500 hover:text-slate-600 lg:hidden"
               aria-controls="sidebar"
@@ -37,7 +35,6 @@ function Header({ sidebarOpen, setSidebarOpen }) {
             </button>
           </div>
 
-          {/* Header: Right side */}
           <div className="flex items-center">
             <button
               className={`ml-3 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 transition duration-150 hover:bg-slate-200 ${
@@ -73,7 +70,6 @@ function Header({ sidebarOpen, setSidebarOpen }) {
             />
             <Notifications />
             <Help />
-            {/*  Divider */}
             <hr className="mx-3 h-6 w-px bg-slate-200" />
             <UserMenu />
           </div>

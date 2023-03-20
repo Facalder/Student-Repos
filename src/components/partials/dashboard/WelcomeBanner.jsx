@@ -3,7 +3,6 @@ import React from 'react';
 function WelcomeBanner({ welcomeTitle, welcomeMessage }) {
   return (
     <div className="relative mb-8 overflow-hidden rounded-sm bg-danube-800 p-4 sm:p-6">
-      {/* Background illustration */}
       <div
         className="pointer-events-none absolute right-0 top-0 -mt-4 mr-16 hidden xl:block"
         aria-hidden="true"
@@ -56,7 +55,6 @@ function WelcomeBanner({ welcomeTitle, welcomeMessage }) {
         </svg>
       </div>
 
-      {/* Content */}
       <div className="relative">
         <h1 className="mb-1 text-2xl font-bold text-white md:text-3xl">{welcomeTitle}</h1>
         <p className="text-san-juan-200">{welcomeMessage} Dashboard - Student batch 5 </p>

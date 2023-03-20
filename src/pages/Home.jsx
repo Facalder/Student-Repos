@@ -3,7 +3,6 @@ import { useState } from 'react';
 import CardTable from '../components/partials/dashboard/cards/CardTable';
 import CardOverview from '../components/partials/dashboard/cards/overview/CardOverview';
 import CardOverviewDoughnut from '../components/partials/dashboard/cards/overview/CardOverviewDoughnut';
-import Footer from '../components/partials/dashboard/Footer';
 import WelcomeBanner from '../components/partials/dashboard/WelcomeBanner';
 import Header from '../components/partials/Header';
 import Sidebar from '../components/partials/Sidebar';
@@ -45,8 +44,6 @@ function Home() {
             </div>
           </div>
         </main>
-
-        <Footer />
       </div>
     </div>
   );

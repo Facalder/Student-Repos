@@ -1,12 +1,10 @@
 // Import Chart.js
 import { Chart, Tooltip } from 'chart.js';
 
-// Import Tailwind config
 import { tailwindConfig } from '../../utils/Utils';
 
 Chart.register(Tooltip);
 
-// Define Chart.js default settings
 Chart.defaults.font.family = '"Inter", sans-serif';
 Chart.defaults.font.weight = '500';
 Chart.defaults.color = tailwindConfig().theme.colors.slate[400];
@@ -25,7 +23,6 @@ Chart.defaults.plugins.tooltip.caretPadding = 20;
 Chart.defaults.plugins.tooltip.cornerRadius = 4;
 Chart.defaults.plugins.tooltip.padding = 8;
 
-// Register Chart.js plugin to add a bg option for chart area
 Chart.register({
   id: 'chartAreaPlugin',
   // eslint-disable-next-line object-shorthand

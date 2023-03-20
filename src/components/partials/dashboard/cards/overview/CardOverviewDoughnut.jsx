@@ -30,8 +30,6 @@ function CardOverviewDoughnut() {
       <header className="border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-slate-800">Total Accomplished</h2>
       </header>
-      {/* Chart built with Chart.js 3 */}
-      {/* Change the height attribute to adjust the chart height */}
       <DoughnutChart chartData={chartData} width={389} height={260} />
     </div>
   );
