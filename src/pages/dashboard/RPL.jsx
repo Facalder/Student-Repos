@@ -11,7 +11,7 @@ function RPL() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-screen overflow-hidden bg-chambray-100">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
       <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
@@ -26,7 +26,7 @@ function RPL() {
 
             <div className="grid gap-6 xl:grid-cols-2">
               <div className="space-y-6">
-                <h2 className="mb-2 text-lg font-semibold text-slate-800">IT Project</h2>
+                <h2 className="mb-2 text-lg font-semibold text-danube-800">IT Project</h2>
                 <div className="grid grid-cols-3 justify-start gap-6">
                   <CardProject
                     titleProject="Book"
@@ -57,7 +57,7 @@ function RPL() {
               </div>
 
               <div className="space-y-6">
-                <h2 className="mb-2 text-lg font-semibold text-slate-800">
+                <h2 className="mb-2 text-lg font-semibold text-danube-800">
                   Non IT Project
                 </h2>
                 <CardProject
@@ -74,7 +74,7 @@ function RPL() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="mb-2 text-lg font-semibold text-slate-800">IDN Hebat</h2>
+              <h2 className="mb-2 text-lg font-semibold text-danube-800">IDN Hebat</h2>
               <div className="grid grid-cols-6 gap-6">
                 <CardProject
                   titleProject="IDN Mengajar"

@@ -72,7 +72,7 @@ function CardOverview({ titleProject, percentageProject, iconProject }) {
   //   };
 
   return (
-    <div className="col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 xl:col-span-4">
+    <div className="col-span-full flex flex-col rounded-2xl bg-white sm:col-span-6 xl:col-span-4">
       <div className="p-5">
         <header className="mb-2 flex items-start justify-between">
           {/* Icon */}

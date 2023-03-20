@@ -71,7 +71,7 @@ function CardTable() {
   ];
 
   return (
-    <div className="col-span-full rounded-sm border border-slate-200 bg-white shadow-lg xl:col-span-8">
+    <div className="col-span-full rounded-2xl bg-white shadow-lg xl:col-span-8">
       <header className="border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-danube-800">Student</h2>
       </header>

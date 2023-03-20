@@ -9,7 +9,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white">
+    <header className="sticky top-0 z-30 m-0 border-b bg-white lg:top-6 lg:mx-6 lg:rounded-2xl lg:border-2">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="-mb-px flex h-16 items-center justify-between">
           <div className="flex">
@@ -35,6 +35,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
             </button>
           </div>
 
+          {/* Header: Right side */}
           <div className="flex items-center">
             <button
               className={`ml-3 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 transition duration-150 hover:bg-slate-200 ${
@@ -70,6 +71,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
             />
             <Notifications />
             <Help />
+            {/*  Divider */}
             <hr className="mx-3 h-6 w-px bg-slate-200" />
             <UserMenu />
           </div>

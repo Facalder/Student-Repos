@@ -5,7 +5,7 @@ import EditMenu from '../../../EditMenu';
 
 function CardProject({ titleProject, percentageProject, iconProject }) {
   return (
-    <div className="col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 xl:col-span-1">
+    <div className="col-span-full flex flex-col rounded-2xl bg-white sm:col-span-6 xl:col-span-1">
       <div className="p-5">
         <header className="mb-2 flex items-start justify-between">
           <i className={`${iconProject} ri-2x text-danube-800`}></i>
@@ -37,12 +37,12 @@ function CardProject({ titleProject, percentageProject, iconProject }) {
           </EditMenu>
         </header>
         <h2 className="mb-2 text-lg font-semibold text-danube-800">{titleProject}</h2>
-        <div className="mb-1 text-xs font-semibold uppercase text-san-juan-300">
-          Average Accomplished
+        <div className="mb-1 text-xs font-semibold capitalize text-san-juan-300">
+          Total Project
         </div>
         <div className="flex items-start">
           <div className="mr-2 text-3xl font-bold text-danube-800">
-            {percentageProject} %
+            {percentageProject}
           </div>
         </div>
       </div>

@@ -9,8 +9,8 @@ export default function SidebarLinkGroup({ children, activecondition }) {
 
   return (
     <li
-      className={`mb-0.5 rounded-sm px-3 py-2 last:mb-0 ${
-        activecondition && 'bg-san-juan-800'
+      className={`mb-0.5 rounded-lg px-3 py-2 last:mb-0 ${
+        activecondition && 'bg-chambray-900'
       }`}
     >
       {children(handleClick, open)}

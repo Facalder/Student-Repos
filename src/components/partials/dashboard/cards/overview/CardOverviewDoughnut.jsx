@@ -26,9 +26,9 @@ function CardOverviewDoughnut() {
   };
 
   return (
-    <div className="col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 xl:col-span-4">
+    <div className="col-span-full flex flex-col  rounded-2xl bg-white sm:col-span-6 xl:col-span-4">
       <header className="border-b border-slate-100 px-5 py-4">
-        <h2 className="font-semibold text-slate-800">Total Accomplished</h2>
+        <h2 className="font-semibold text-danube-800">Total Accomplished</h2>
       </header>
       <DoughnutChart chartData={chartData} width={389} height={260} />
     </div>
