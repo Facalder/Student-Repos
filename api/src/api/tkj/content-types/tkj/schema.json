@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tkjs",
+  "info": {
+    "singularName": "tkj",
+    "pluralName": "tkjs",
+    "displayName": "TKJ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "absent": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "class": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "TKJ",
+        "DMM ",
+        "RPL"
+      ],
+      "required": true
+    },
+    "ITProject": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.tkj",
+      "max": 3
+    },
+    "NonITProject": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.non-it",
+      "max": 2
+    },
+    "IDNHebat": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.non-it-project",
+      "max": 2
+    },
+    "OptionalSKL": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.optional-1"
+    }
+  }
+}
