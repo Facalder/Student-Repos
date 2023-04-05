@@ -8,11 +8,7 @@
   "attributes": {
     "sklName": {
       "type": "enumeration",
-      "enum": [
-        "Tutorial Video ",
-        "Certificate ",
-        "Cisco Lab "
-      ],
+      "enum": ["Tutorial Video ", "Certificate ", "Cisco Lab "],
       "required": true
     },
     "sklAccomplished": {
