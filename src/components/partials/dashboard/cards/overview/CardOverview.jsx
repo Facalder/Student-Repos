@@ -72,7 +72,7 @@ function CardOverview({ titleProject, percentageProject, iconProject }) {
   //   };
 
   return (
-    <div className="col-span-full flex flex-col rounded-sm border border-slate-200 bg-white shadow-lg sm:col-span-6 xl:col-span-4">
+    <div className="col-span-full flex flex-col rounded-2xl bg-white sm:col-span-6 xl:col-span-4">
       <div className="p-5">
         <header className="mb-2 flex items-start justify-between">
           {/* Icon */}
@@ -115,9 +115,7 @@ function CardOverview({ titleProject, percentageProject, iconProject }) {
           </div>
         </div>
       </div>
-      {/* Chart built with Chart.js 3 */}
       <div className="grow">
-        {/* Change the height attribute to adjust the chart height */}
         {/* <LineChart data={chartData} width={389} height={128} /> */}
       </div>
     </div>
