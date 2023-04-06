@@ -7,7 +7,6 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
   const modalContent = useRef(null);
   const searchInput = useRef(null);
 
-  // close on click outside
   useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!modalOpen || modalContent.current.contains(target)) return;
@@ -17,7 +16,6 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
     return () => document.removeEventListener('click', clickHandler);
   });
 
-  // close if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }) => {
       if (!modalOpen || keyCode !== 27) return;
@@ -33,7 +31,6 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
 
   return (
     <>
-      {/* Modal backdrop */}
       <Transition
         className="fixed inset-0 z-50 bg-slate-900 bg-opacity-30 transition-opacity"
         show={modalOpen}
@@ -63,7 +60,6 @@ function SearchModal({ id, searchId, modalOpen, setModalOpen }) {
           ref={modalContent}
           className="max-h-full w-full max-w-2xl overflow-auto rounded bg-white shadow-lg"
         >
-          {/* Search form */}
           <form className="border-b border-slate-200">
             <div className="relative">
               <label htmlFor={searchId} className="sr-only">

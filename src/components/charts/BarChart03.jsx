@@ -11,7 +11,6 @@ import {
 } from 'chart.js';
 import React, { useEffect, useRef } from 'react';
 
-// Import utilities
 import { tailwindConfig } from '../utils/Utils';
 
 Chart.register(BarController, BarElement, LinearScale, CategoryScale, Tooltip, Legend);
@@ -58,7 +57,7 @@ function BarChart03({ data, width, height }) {
           },
           tooltip: {
             callbacks: {
-              title: () => false, // Disable tooltip title
+              title: () => false,
               label: (context) => context.parsed.x,
             },
           },

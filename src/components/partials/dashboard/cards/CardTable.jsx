@@ -71,15 +71,13 @@ function CardTable() {
   ];
 
   return (
-    <div className="col-span-full rounded-sm border border-slate-200 bg-white shadow-lg xl:col-span-8">
+    <div className="col-span-full rounded-2xl bg-white xl:col-span-8">
       <header className="border-b border-slate-100 px-5 py-4">
         <h2 className="font-semibold text-danube-800">Student</h2>
       </header>
       <div className="p-3">
-        {/* Table */}
         <div className="overflow-x-auto">
           <table className="w-full table-auto">
-            {/* Table header */}
             <thead className="bg-danube-50 text-xs font-semibold capitalize text-san-juan-400">
               <tr>
                 <th className="whitespace-nowrap p-2">
@@ -108,7 +106,7 @@ function CardTable() {
                 </th>
               </tr>
             </thead>
-            {/* Table body */}
+
             <tbody className="divide-y divide-slate-100 text-sm">
               {customers.map((customer) => {
                 return (

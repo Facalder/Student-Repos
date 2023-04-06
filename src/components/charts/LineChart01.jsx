@@ -12,7 +12,6 @@ import {
 } from 'chart.js';
 import React, { useEffect, useRef } from 'react';
 
-// Import utilities
 import { formatValue, tailwindConfig } from '../../utils/Utils';
 
 Chart.register(
@@ -58,7 +57,7 @@ function LineChart01({ data, width, height }) {
         plugins: {
           tooltip: {
             callbacks: {
-              title: () => false, // Disable tooltip title
+              title: () => false,
               label: (context) => formatValue(context.parsed.y),
             },
           },

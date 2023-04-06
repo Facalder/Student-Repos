@@ -3,7 +3,6 @@ import 'chartjs-adapter-moment';
 import { ArcElement, Chart, DoughnutController, TimeScale, Tooltip } from 'chart.js/auto';
 import React, { useEffect, useRef } from 'react';
 
-// Import utilities
 import { tailwindConfig } from '../../utils/Utils';
 
 Chart.register(DoughnutController, ArcElement, TimeScale, Tooltip);
@@ -43,16 +42,14 @@ function DoughnutChart({ chartData, width, height }) {
           afterUpdate(c, args, options) {
             const ul = legend.current;
             if (!ul) return;
-            // Remove old legend items
             while (ul.firstChild) {
               ul.firstChild.remove();
             }
-            // Reuse the built-in legendItems generator
             const items = c.options.plugins.legend.labels.generateLabels(c);
             items.forEach((item) => {
               const li = document.createElement('li');
               li.style.margin = tailwindConfig().theme.margin[1];
-              // Button element
+
               const button = document.createElement('button');
               button.classList.add('btn-xs');
               button.style.backgroundColor = tailwindConfig().theme.colors.white;
@@ -65,7 +62,7 @@ function DoughnutChart({ chartData, width, height }) {
                 c.toggleDataVisibility(item.index, !item.index);
                 c.update();
               };
-              // Color box
+
               const box = document.createElement('span');
               box.style.display = 'block';
               box.style.width = tailwindConfig().theme.width[2];

@@ -12,7 +12,6 @@ import {
 } from 'chart.js';
 import React, { useEffect, useRef } from 'react';
 
-// Import utilities
 import { formatValue, tailwindConfig } from '../utils/Utils';
 
 Chart.register(
@@ -79,7 +78,7 @@ function LineChart02({ data, width, height }) {
           },
           tooltip: {
             callbacks: {
-              title: () => false, // Disable tooltip title
+              title: () => false,
               label: (context) => formatValue(context.parsed.y),
             },
           },
@@ -97,11 +96,10 @@ function LineChart02({ data, width, height }) {
           afterUpdate(c, args, options) {
             const ul = legend.current;
             if (!ul) return;
-            // Remove old legend items
             while (ul.firstChild) {
               ul.firstChild.remove();
             }
-            // Reuse the built-in legendItems generator
+
             const items = c.options.plugins.legend.labels.generateLabels(c);
             items.slice(0, 2).forEach((item) => {
               const li = document.createElement('li');
@@ -118,7 +116,7 @@ function LineChart02({ data, width, height }) {
                 );
                 c.update();
               };
-              // Color box
+
               const box = document.createElement('span');
               box.style.display = 'block';
               box.style.width = tailwindConfig().theme.width[3];
@@ -128,7 +126,7 @@ function LineChart02({ data, width, height }) {
               box.style.borderWidth = '3px';
               box.style.borderColor = c.data.datasets[item.datasetIndex].borderColor;
               box.style.pointerEvents = 'none';
-              // Label
+
               const label = document.createElement('span');
               label.style.color = tailwindConfig().theme.colors.slate[500];
               label.style.fontSize = tailwindConfig().theme.fontSize.sm[0];
@@ -163,7 +161,6 @@ function LineChart02({ data, width, height }) {
           </div>
         </div>
       </div>
-      {/* Chart built with Chart.js 3 */}
       <div className="grow">
         <canvas ref={canvas} width={width} height={height}></canvas>
       </div>
