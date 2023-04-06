@@ -41,11 +41,7 @@
         }
       },
       "type": "enumeration",
-      "enum": [
-        "TKJ",
-        "DMM ",
-        "RPL"
-      ],
+      "enum": ["TKJ", "DMM ", "RPL"],
       "required": true
     },
     "ITProject": {

@@ -8,13 +8,7 @@
   "attributes": {
     "sklName": {
       "type": "enumeration",
-      "enum": [
-        "Book",
-        "Certificate",
-        "UI/UX Mobile",
-        "DBMS Website",
-        "Flutter"
-      ],
+      "enum": ["Book", "Certificate", "UI/UX Mobile", "DBMS Website", "Flutter"],
       "required": true
     },
     "sklAccomplished": {

@@ -7,10 +7,7 @@
   "attributes": {
     "sklName": {
       "type": "enumeration",
-      "enum": [
-        "English",
-        "Diniyah"
-      ],
+      "enum": ["English", "Diniyah"],
       "required": true
     },
     "sklAccomplished": {

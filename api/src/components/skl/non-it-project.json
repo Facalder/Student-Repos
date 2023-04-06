@@ -8,10 +8,7 @@
   "attributes": {
     "sklName": {
       "type": "enumeration",
-      "enum": [
-        "IDN Mengajar ",
-        "Weekend Tech Talk"
-      ],
+      "enum": ["IDN Mengajar ", "Weekend Tech Talk"],
       "required": true
     },
     "sklAccomplished": {

@@ -8,13 +8,7 @@
   "attributes": {
     "sklName": {
       "type": "enumeration",
-      "enum": [
-        "Book",
-        "Certificate ",
-        "Cubic Design ",
-        "UI/UX Mobile ",
-        "UI/UX Web"
-      ],
+      "enum": ["Book", "Certificate ", "Cubic Design ", "UI/UX Mobile ", "UI/UX Web"],
       "required": true
     },
     "sklAccomplished": {
