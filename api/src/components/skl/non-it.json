@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_skl_non_its",
+  "info": {
+    "displayName": "nonIT"
+  },
+  "options": {},
+  "attributes": {
+    "sklName": {
+      "type": "enumeration",
+      "enum": ["English", "Diniyah"],
+      "required": true
+    },
+    "sklAccomplished": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

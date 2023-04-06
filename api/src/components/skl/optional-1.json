@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_skl_optional_optional_1s",
+  "info": {
+    "displayName": "Optional",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sklName": {
+      "type": "string",
+      "unique": true
+    },
+    "sklAccomplished": {
+      "type": "integer",
+      "unique": false
+    }
+  }
+}

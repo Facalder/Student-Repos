@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rpls",
+  "info": {
+    "singularName": "rpl",
+    "pluralName": "rpls",
+    "displayName": "RPL"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "absent": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "class": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": ["TKJ", "DMM", "RPL"],
+      "required": true
+    },
+    "ITProject": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "max": 5,
+      "component": "skl.rpl"
+    },
+    "NonITProject": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.non-it",
+      "max": 2
+    },
+    "IDNHebat": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.non-it-project",
+      "max": 2
+    },
+    "optionalSKL": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "skl.optional-1"
+    }
+  }
+}

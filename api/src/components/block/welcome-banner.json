@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_global_welcome_banners",
+  "info": {
+    "displayName": "welcomeBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "subHeadline": {
+      "type": "string"
+    }
+  }
+}
