@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_skl_non_it_projects",
+  "info": {
+    "displayName": "IDNHebat",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sklName": {
+      "type": "enumeration",
+      "enum": [
+        "IDN Mengajar ",
+        "Weekend Tech Talk"
+      ],
+      "required": true
+    },
+    "sklAccomplished": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_skl_tkjs",
+  "info": {
+    "displayName": "tkj",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sklName": {
+      "type": "enumeration",
+      "enum": [
+        "Tutorial Video ",
+        "Certificate ",
+        "Cisco Lab "
+      ],
+      "required": true
+    },
+    "sklAccomplished": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
